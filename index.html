@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toss App Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="toss-app">
+        <div class="header">
+            <div class="logo">
+                <img src="img/Toss_Logo_Primary.png" >
+            </div>
+            <div class="header-icons">
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <circle cx="12" cy="12" r="5" stroke="#666" stroke-width="1.5"/>
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="#666"/>
+                </svg>
+                <svg class="header-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="#666"/>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="search-bar">
+            <div class="search-text">토스뱅크</div>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M9 18l6-6-6-6" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        
+        <div class="section">
+            <div class="account-item">
+                <div class="account-info">
+                    <div class="account-icon blue-icon">T</div>
+                    <div class="account-details">
+                        <div class="account-name">토스뱅크 통장</div>
+                        <div class="account-balance">150,009원</div>
+                    </div>
+                </div>
+                <button class="transfer-btn">송금</button>
+            </div>
+            
+            <div class="account-item">
+                <div class="account-info">
+                    <div class="account-icon gold-icon">K</div>
+                    <div class="account-details">
+                        <div class="account-name">멀티라2030통장</div>
+                        <div class="account-balance">73,820원</div>
+                    </div>
+                </div>
+                <button class="transfer-btn">송금</button>
+            </div>
+            
+            <div class="account-item">
+                <div class="account-info">
+                    <div class="account-icon samsung-icon">S</div>
+                    <div class="account-details">
+                        <div class="account-name">투자 모아보기 · 8개</div>
+                        <div class="account-balance">90,000,000원 <span class="positive-change">+12.5%</span></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more">
+                내 계좌 · 대출 · 증권 · 포인트 보기 >
+            </div>
+        </div>
+        
+        <div class="section2">
+            <div class="notification">
+                <div class="account-info">
+                    <div class="account-icon card-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="white">
+                            <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/>
+                        </svg>
+                    </div>
+                    <div class="account-details">
+                        <div class="account-name">이번 달 쓴비</div>
+                        <div class="account-balance">125,000원</div>
+                    </div>
+                </div>
+                <div class="notification-badge">새 내역 1건</div>
+            </div>
+            
+            <div class="notification2">
+                <div class="account-info">
+                    <div class="account-icon calendar-icon">D-3</div>
+                    <div class="account-details">
+                        <div class="account-name">3월 25일 낼 카드값</div>
+                        <div class="account-balance">921,000원</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <div class="notification">
+                <div class="notification-text">내 신용 점수</div>
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M9 18l6-6-6-6" stroke="#999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            
+            <div class="tabs">
+                <div class="tab active">계좌개설</div>
+                <div class="tab">카드발급</div>
+                <div class="tab">대출받기</div>
+            </div>
+        </div>
+        
+        <div class="bottom-nav">
+            <div class="nav-item active">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+                <div>홈</div>
+            </div>
+            <div class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" stroke="#999" stroke-width="1.5"/>
+                </svg>
+                <div>혜택</div>
+            </div>
+            <div class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zM9 8V6c0-1.66 1.34-3 3-3s3 1.34 3 3v2H9z" stroke="#999" stroke-width="1.5"/>
+                </svg>
+                <div>토스페이</div>
+            </div>
+            <div class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M21 18v1c0 1.1-.9 2-2 2H5c-1.11 0-2-.9-2-2V5c0-1.1.89-2 2-2h14c1.1 0 2 .9 2 2v1h-9c-1.11 0-2 .9-2 2v8c0 1.1.89 2 2 2h9zm-9-2h10V8H12v8zm4-2.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" stroke="#999" stroke-width="1.5"/>
+                </svg>
+                <div>주식</div>
+            </div>
+            <div class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zM7 7v2h14V7H7z" stroke="#999" stroke-width="1.5"/>
+                </svg>
+                <div>전체</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
